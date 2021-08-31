@@ -38,7 +38,7 @@
 
 Это просто среднее гармоническое Precision и Recall. Его максимизация приводит к максимизации и Precision, и Recall.
 
-![equation](https://latex.codecogs.com/gif.latex?F_1&space;=&space;\dfrac{2}{\dfrac{1}{Precision}&space;&plus;&space;\dfrac{1})
+![equation](https://latex.codecogs.com/gif.latex?F_1&space;=&space;\dfrac{2}{\dfrac{1}{Precision}&space;&plus;&space;\dfrac{1}{Recall}}&space;=&space;\dfrac{2TP}{2TP&space;&plus;&space;FP&space;&plus;&space;FN})
 
 6. ### F_beta-мера
 
