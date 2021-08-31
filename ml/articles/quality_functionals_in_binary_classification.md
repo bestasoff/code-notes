@@ -4,9 +4,7 @@
 
 Доля объектов, на которых алгоритм выдал правильные ответы.
 
-```math
-    Accuracy = \dfrac{1}{m}\sum\limits_{i = 1}^{m}I\[a_i = y_i\]
-```
+![equation](https://latex.codecogs.com/gif.latex?Accuracy&space;=&space;\dfrac{1}{m}\sum\limits_{i&space;=&space;1}^{m}I\[a_i&space;=&space;y_i\])
 
 Явный недостаток: невалидна в случае дисбаланса классов, потому что с точки зрения точности выгодно почти всегда
 выдавать метку самого популярного класса.
