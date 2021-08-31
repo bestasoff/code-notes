@@ -1,5 +1,5 @@
 # code-notes
-Notes from papers I'm reading.
+Notes from papers or articles.
 
 - [code-notes](#code-notes)
   - [Machine Learning](#machine-learning)
