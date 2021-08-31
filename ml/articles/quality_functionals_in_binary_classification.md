@@ -10,9 +10,7 @@
 выдавать метку самого популярного класса.
 
 
-```math
-    Accuracy = \dfrac{TN + TP}{TP + TN + FP + FN}
-```
+![equation](https://latex.codecogs.com/gif.latex?Accuracy&space;=&space;\dfrac{TN&space;&plus;&space;TP}{TP&space;&plus;&space;TN&space;&plus;&space;FP&space;&plus;&space;FN})
 
 2. ### Виды ошибок классификатора
 
@@ -24,43 +22,24 @@
 
 Показывает, какой процент объектов нами правильно классифицирован.
 
-```math
-    TPR = \dfrac{TP}{TP + FN}
-```
+![equation](https://latex.codecogs.com/gif.latex?TPR&space;=&space;\dfrac{TP}{TP&space;&plus;&space;FN})
 
 4. ### Precision (Positive Predictive Value)
 
 Показывает, какой процент положительных объектов правильно классифицирован.
 
-```math
-    PPV = \dfrac{TP}{TP + FP}
-```
+![equation](https://latex.codecogs.com/gif.latex?PPV&space;=&space;\dfrac{TP}{TP&space;&plus;&space;FP})
+
 
 Точность и полнота -- "ортогональные" критерии качества. Легко построить алгоритм со 100%-й полнотой: он все объекты относит к классу 1, но при этом точность может быть очень низкой. Нетрудно построить алгоритм с близкой к 100% точностью: он относит к классу 1 только те объекты, в которых уверен, при этом полнота может быть низкая.
 
 
-5. ### ```math F_1```-мера
+5. ### F_1-мера
 
 Это просто среднее гармоническое Precision и Recall. Его максимизация приводит к максимизации и Precision, и Recall.
 
-```math
-    F_1 = \dfrac{2}{\dfrac{1}{Precision} + \dfrac{1}{Recall}} = \dfrac{2TP}{2TP + FP + FN}
-```
+![equation](https://latex.codecogs.com/gif.latex?F_1&space;=&space;\dfrac{2}{\dfrac{1}{Precision}&space;&plus;&space;\dfrac{1})
 
+6. ### F_beta-мера
 
-6. ### ```math F_{\beta}```-мера
-
-```math
-    F_{\beta} = \dfrac{1}{\dfrac{\alpha}{Precision} + \dfrac{1 - \alpha}{Recall}} =
-    \dfrac{1}{\alpha}\dfrac{Precision \dot Recall}{Recall + (\dfrac{1}{\alpha} - 1) \dot Precision} 
-```
-
-```math
-    \beta^2 = \dfrac{1}{\alpha} - 1
-```
-
-```math
-    F_{\beta} = (1 + \beta^2) \dot \dfrac{P \dot R}{R + \beta^{2}\dot P}
-```
-
-
+![equation](https://latex.codecogs.com/gif.latex?F_{\beta}&space;=&space;\dfrac{1}{\dfrac{\alpha}{Precision}&space;&plus;&space;\dfrac{1&space;-&space;\alpha}{Recall}}&space;=&space;\dfrac{1}{\alpha}\dfrac{Precision&space;\cdot&space;Recall}{Recall&space;&plus;&space;(\dfrac{1}{\alpha}&space;-&space;1)&space;\cdot&space;Precision}&space;\newline&space;\beta^2&space;=&space;\dfrac{1}{\alpha}&space;-&space;1&space;\newline&space;F_{\beta}&space;=&space;(1&space;&plus;&space;\beta^2)&space;\cdot&space;\dfrac{P&space;\cdot&space;R}{R&space;&plus;&space;\beta^{2}\cdot&space;P})
